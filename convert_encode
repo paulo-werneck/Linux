@@ -1,0 +1,5 @@
+# verifica o encode de um arquivo
+file -i original.csv
+
+# converte o encode de um arquivo (no caso, para utf-8)
+iconv -f iso-8859-1 -t utf-8 < original.csv > copia.csv
